@@ -3,7 +3,7 @@ export const FormComponent = () => {
 
         <form>
             <div className="form-group">
-                <label for="userName">user name</label>
+                <label htmlFor="userName">user name</label>
                 <input
                     type="text"
                     className="form-control"
@@ -12,7 +12,7 @@ export const FormComponent = () => {
             </div>
 
             <div className="form-group">
-                <label for="email1">Email address</label>
+                <label htmlFor="email1">Email address</label>
                 <input type="email"
                     className="form-control"
                     name="email1"
@@ -20,7 +20,7 @@ export const FormComponent = () => {
                 />
             </div>
             <div className="form-group">
-                <label for="password">Password</label>
+                <label htmlFor="password">Password</label>
                 <input type="password"
                     className="form-control"
                     name="password"
