@@ -1,34 +1,31 @@
-import { useState } from "react"
+import { useForm } from "../hooks/useForm"
 
 export const FormComponent = () => {
 
-const[formState,setFormState]=  useState({
-userName:'Nox Opio',
-email: 'dark.tempus@gmail.com',
-password:'999999'
+const initialForm = { userName:' ',  email: ' ', password:' '   
+    
+    }
 
 
-})
 
-
+const {formState,onInputChange }= useForm(initialForm)
 const {userName,email,password }=formState
-
-const onInputChange= ({target})=>{  
-    const {name,value}= target
-    setFormState({...formState})
-}
-
-
+    const onSubmit=(event)=>{
+        event.preventDefault()
+    
+    console.log(formState)
+    
+    }   
     return (
 
-        <form>
+        <form onSubmit={onSubmit}>
             <div className="form-group">
                 <label htmlFor="userName">user name</label>
                 <input
                     type="text"
                     className="form-control"
                     name="userName"
-                    placeholder="uerser name"
+                    placeholder="user name"
                     value={userName} 
                     onChange={onInputChange}/>
             </div>
@@ -53,16 +50,12 @@ const onInputChange= ({target})=>{
                     onChange={onInputChange}
                 />
             </div>
-            <div className="form-check">
-            </div>
+           
             <button type="submit"
                 className="btn btn-primary">
                 Submit
             </button>
         </form>
-
-
-
 
     )
 }
