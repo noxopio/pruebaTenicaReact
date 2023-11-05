@@ -1,0 +1,40 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+   //@import url('https://fonts.googleapis.com/css2? family= Fira+Code:wght@300;400;500;600;700 & family= Roboto+Slab:wght@100;300; 700 & mostrar=intercambiar');
+  }
+  //s/* Evitar scroll horizontal */
+  html, body {
+    max-width:auto;
+    max-height: auto;
+
+  // overflow-x: hidden;
+    }
+  
+  
+  body {
+    position: relative;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    scroll-behavior: smooth;
+  // overflow: hidden;
+    min-height: 100vh;
+    
+//     font-family: 'late', monospace;
+//     font-family: 'Grenze Gotisch', serif;
+//    font-family: 'Roboto Slab', serif;
+//     background: rgb(231, 233, 232) left / cover no-repeat url('/img/environmental-protection-326923_1280.jpg');
+//     background-position: center;
+//     background-attachment: fixed;
+  
+  }
+
+
