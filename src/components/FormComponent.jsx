@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-export const FormComponent = () => {
-    return (
 
-        <form>
-=======
 import { useForm } from "../hooks/useForm"
 
 export const FormComponent = () => {
@@ -25,28 +20,15 @@ const {userName,email,password }=formState
     return (
 
         <form className="form-container" onSubmit={onSubmit}>
->>>>>>> dev
+
             <div className="form-group">
                 <label htmlFor="userName">user name</label>
                 <input
                     type="text"
                     className="form-control"
                     name="userName"
-<<<<<<< HEAD
-                    placeholder="uerser name" />
-            </div>
-
-            <div className="form-group">
-                <label htmlFor="email1">Email address</label>
-                <input type="email"
-                    className="form-control"
-                    name="email1"
-                    placeholder="Enter email"
-=======
-                    placeholder="user name"
-                    value={userName} 
-                    onChange={onInputChange}/>
-            </div>
+                    value={userName}
+                    onChange={onInputChange}
 
             <div className="form-group">
                 <label htmlFor="email">Email address</label>
@@ -56,7 +38,6 @@ const {userName,email,password }=formState
                     placeholder="Enter email"
                     value={email}
                     onChange={onInputChange}
->>>>>>> dev
                 />
             </div>
             <div className="form-group">
@@ -65,30 +46,18 @@ const {userName,email,password }=formState
                     className="form-control"
                     name="password"
                     placeholder="Password"
-<<<<<<< HEAD
-                />
-            </div>
-            <div className="form-check">
-            </div>
-=======
+
                     value={password}
                     onChange={onInputChange}
                 />
             </div>
            
->>>>>>> dev
+
             <button type="submit"
                 className="btn btn-primary">
                 Submit
             </button>
         </form>
-
-<<<<<<< HEAD
-
-
-
     )
-=======
-)
->>>>>>> dev
+
 }
