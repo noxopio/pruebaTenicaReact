@@ -1,4 +1,3 @@
-
 import { useForm } from "../hooks/useForm"
 
 export const FormComponent = () => {
@@ -20,15 +19,16 @@ const {userName,email,password }=formState
     return (
 
         <form className="form-container" onSubmit={onSubmit}>
-
             <div className="form-group">
                 <label htmlFor="userName">user name</label>
                 <input
                     type="text"
                     className="form-control"
                     name="userName"
-                    value={userName}
-                    onChange={onInputChange}
+                    placeholder="user name"
+                    value={userName} 
+                    onChange={onInputChange}/>
+            </div>
 
             <div className="form-group">
                 <label htmlFor="email">Email address</label>
@@ -46,18 +46,16 @@ const {userName,email,password }=formState
                     className="form-control"
                     name="password"
                     placeholder="Password"
-
                     value={password}
                     onChange={onInputChange}
-                />
+        
+        />
             </div>
            
-
             <button type="submit"
                 className="btn btn-primary">
                 Submit
             </button>
         </form>
-    )
-
+)
 }
