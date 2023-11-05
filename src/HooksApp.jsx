@@ -7,7 +7,7 @@ export const HooksApp = () => {
     <>
     
     
-    <h1>Hooks </h1>
+    <h1 className="form-title"> FORMULARIO </h1>
     <hr />
     <FormComponent></FormComponent>
     

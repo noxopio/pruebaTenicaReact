@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html, body {
+  max-width: auto;
+  max-height: auto;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+span {
+  letter-spacing: 5px;
+  color: white;
+  display: block;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 2px 2px 4px rgba(206, 201, 201, 0.9254901961), -2px -2px 4px #5f5d5d;
+}
+
+.loading {
+  display: block;
+  margin: 0 auto;
+  border-radius: 1px;
+  /*     border-right: 4px solid  whitesmoke; */
+  width: 40ch;
+  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+  color: rgba(255, 0, 0, 0.527);
+}
+
+@font-face {
+  font-family: "Marske";
+  src: url("/Marske/Marske.otf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.in-flex {
+  flex: 1;
+  min-width: 250px;
+}
+
+.in-flex:first-child {
+  fLex: 2;
+  padding: 25px;
+  background-coLor: #fff;
+  margin: 20px;
+  margin-bottom: 0px;
+}
+
+.in-flex div {
+  padding: 25px;
+  background-color: #fff;
+  margin: 20px;
+}
+
+.form-container {
+  margin: 10px;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 15px 15px 30px rgba(206, 201, 201, 0.9254901961), -15px -15px 30px #5f5d5d;
+  border-radius: 10px;
+  background-color: azure;
+}
+
+.form-title {
+  display: block;
+  text-align: center;
+  width: 24ch;
+  text-transform: uppercase;
+  white-space: nowrap;
+  /*   border-right: 4px solid ; */
+  animation: typing 5s steps(60), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+  text-align: center;
+}
+@keyframes typing {
+  from {
+    color: white;
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/*# sourceMappingURL=index.css.map */

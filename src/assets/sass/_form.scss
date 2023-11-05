@@ -1,0 +1,22 @@
+@use 'mixin';
+
+
+
+.form-container{
+    margin: 10px;
+    padding:80px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   max-width: 500px;
+    max-height: 500px;
+@include mixin.neo(10px,15px);
+    border-radius: 10px;
+    background-color: azure;
+
+}
+.form-title{
+@include mixin.tiping(24ch);
+text-align: center;
+    
+}

@@ -2,7 +2,7 @@ import { useForm } from "../hooks/useForm"
 
 export const FormComponent = () => {
 
-const initialForm = { userName:' ',  email: ' ', password:' '   
+const initialForm = { userName:'nox opio ',  email: 'Dark.tempus@gmail ', password:'99999 '   
     
     }
 
@@ -18,7 +18,7 @@ const {userName,email,password }=formState
     }   
     return (
 
-        <form onSubmit={onSubmit}>
+        <form className="form-container" onSubmit={onSubmit}>
             <div className="form-group">
                 <label htmlFor="userName">user name</label>
                 <input
