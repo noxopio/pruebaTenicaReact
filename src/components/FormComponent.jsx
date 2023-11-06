@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import { useForm } from "../hooks/useForm"
 
 export const FormComponent = () => {
@@ -51,10 +52,16 @@ const {userName,email,password }=formState
                 />
             </div>
            
-            <button type="submit"
+
+            <NavLink to='/User'>
+
+            <button type="none"
+            
                 className="btn btn-primary">
+                    
                 INICIO
             </button>
+            </NavLink>
         </form>
 
 )
