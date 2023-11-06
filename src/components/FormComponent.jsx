@@ -53,7 +53,7 @@ const {userName,email,password }=formState
            
             <button type="submit"
                 className="btn btn-primary">
-                Submit
+                INICIO
             </button>
         </form>
 
