@@ -5,13 +5,18 @@ import './assets/css/index.css'
 
 import { BrowserRouter } from 'react-router-dom'
 import { UsuariosComponent } from './components/UsuariosComponent'
-import { HooksApp } from './HooksApp'
+import { HooksApp } from './App'
+import { ScreenUser } from './ScreenUser'
+import { Menu } from './Menu'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  <BrowserRouter>
   <React.StrictMode>
-    <HooksApp></HooksApp>
-    <UsuariosComponent></UsuariosComponent>
+
+
+<Menu> </Menu>
+    
+    
   </React.StrictMode>,
  </BrowserRouter> 
 )
