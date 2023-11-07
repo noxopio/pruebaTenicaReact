@@ -8,9 +8,9 @@ export const Menu = () => {
 
 
     <>
-    
-    
-    
+
+
+
 <NavBar></NavBar>
 
 
@@ -21,6 +21,7 @@ export const Menu = () => {
 
 
 
+<Route path='/' element = {<HooksApp></HooksApp>} ></Route>
 <Route path='/login' element = {<HooksApp></HooksApp>} ></Route>
 <Route path='/User' element = {<ScreenUser></ScreenUser>} ></Route>
 

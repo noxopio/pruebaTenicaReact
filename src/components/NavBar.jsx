@@ -3,8 +3,7 @@ import { NavLink ,Link} from "react-router-dom"
 export const NavBar = () => {
   return (
 
-    
-
+<article className="menu-screen">
 
 <ul  className="nav nav-tabs">
   <li  className="nav-item">
@@ -18,14 +17,8 @@ export const NavBar = () => {
   </li> */}
 
 </ul>
-
-
-
-
-
     
-
-
+</article>
 
     )
 }

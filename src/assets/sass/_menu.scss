@@ -1,0 +1,13 @@
+@use 'mixin';
+
+.menu-screen{
+display: flex;
+justify-content: center;
+
+width: auto;
+text-transform: uppercase;
+
+@include mixin.neo(10px,10px);
+    
+
+}

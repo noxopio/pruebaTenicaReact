@@ -2,7 +2,13 @@
 @use 'color';
 @use 'mixin';
 @use 'form';
+@use 'menu';
+@use 'filter';
 
 body{
-    background-color: whitesmoke;
+    background-color: rgb(218, 212, 212);
+}
+h1{
+    text-align: center;
+text-transform: uppercase;
 }

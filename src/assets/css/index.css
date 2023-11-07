@@ -108,8 +108,30 @@ span {
   }
 }
 
+.menu-screen {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px rgba(206, 201, 201, 0.9254901961), -10px -10px 20px #5f5d5d;
+}
+
+.filter {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem;
+}
+
 body {
-  background-color: whitesmoke;
+  background-color: rgb(218, 212, 212);
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=index.css.map */
