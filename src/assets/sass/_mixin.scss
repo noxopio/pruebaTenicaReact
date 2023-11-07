@@ -14,19 +14,10 @@
 
 
 
-
-
-
-
 @mixin tiping($ch) {
     display: block;
     text-align: center;
  //
-
-
-
-
-
 
     //typing
     width: $ch;
@@ -35,9 +26,7 @@
     /*   border-right: 4px solid ; */
     animation: typing 5s steps(60),
         blink .5s infinite step-end alternate;
-
     overflow: hidden;
-
     @keyframes typing {
         from {
             color: white;

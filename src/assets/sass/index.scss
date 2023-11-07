@@ -7,10 +7,20 @@
 
 @use 'filter';
 
-body{
+body {
+    background-image: url('/src/assets/img/ico/favi.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: rgb(218, 212, 212);
 }
-h1{
+
+h1 {
     text-align: center;
-text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+.greetings {
+    border-right: solid 1px black;
+    @include mixin.tiping(48ch);
 }

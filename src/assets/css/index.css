@@ -14,6 +14,7 @@ html, body {
 body {
   position: relative;
   height: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,6 +83,10 @@ span {
   background: #ffffff;
   box-shadow: 15px 15px 30px rgba(206, 201, 201, 0.9254901961), -15px -15px 30px #5f5d5d;
   border-radius: 10px;
+  background-image: url("/src/assets/img/ico/favi.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: azure;
 }
 
@@ -120,6 +125,8 @@ span {
 }
 
 .table-custom {
+  width: 50vw;
+  height: auto;
   border-radius: 32px;
   border-radius: 30px;
   background: #ffffff;
@@ -127,6 +134,8 @@ span {
 }
 
 .filter {
+  display: flex;
+  justify-content: center;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
@@ -143,12 +152,39 @@ span {
 }
 
 body {
+  background-image: url("/src/assets/img/ico/favi.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: rgb(218, 212, 212);
 }
 
 h1 {
   text-align: center;
   text-transform: uppercase;
+}
+
+.greetings {
+  border-right: solid 1px black;
+  display: block;
+  text-align: center;
+  width: 48ch;
+  text-transform: uppercase;
+  white-space: nowrap;
+  /*   border-right: 4px solid ; */
+  animation: typing 5s steps(60), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+@keyframes typing {
+  from {
+    color: white;
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

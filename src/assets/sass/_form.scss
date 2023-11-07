@@ -12,6 +12,10 @@
     max-height: 500px;
 @include mixin.neo(10px,15px);
     border-radius: 10px;
+    background-image:  url('/src/assets/img/ico/favi.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: azure;
 
 }

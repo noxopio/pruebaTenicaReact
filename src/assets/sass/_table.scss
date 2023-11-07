@@ -2,6 +2,10 @@
 
 .table-custom{
     
+
+    
+    width:50vw;
+    height: auto;
     border-radius: 32px;
     @include mixin.neo(30px,30px);
 }

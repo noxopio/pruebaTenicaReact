@@ -91,10 +91,10 @@ export const FormComponent = () => {
           <ScreenUser></ScreenUser>
           <section className="set">
 
-          <p className="set-text" >Bienvenido, has iniciado sesión como {userName}.</p>
+          <p className="greetings" >Bienvenido, has iniciado sesión como {userName}.</p>
             
           </section>
-          <button onClick={handleLogout} className="btn btn-secondary">
+          <button onClick={handleLogout} className="btn btn-primary">
             Cerrar sesión
           </button>
         </div>
