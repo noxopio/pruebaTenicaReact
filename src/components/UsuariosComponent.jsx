@@ -34,8 +34,8 @@ export const UsuariosComponent = () => {
 
   return (
     <>
-      <h1 className="form-title">Lista de usuarios</h1>
 
+        <h1 className="form-title">Lista de usuarios</h1>
       <div  className="filter">
         <input
         

@@ -3,16 +3,19 @@
 
 .filter {
     display: flex;
-    justify-content: center;
+    justify-content: start;
         
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
+    margin-bottom: 8px;
+    
     
     input {
-margin: 16px;
-        border-radius: 10px;
+    
+        width:280px;
+    
+        border-radius: 0.5rem;
         padding: 1px;
-        width: 500px;
         text-align: center;
         text-transform: uppercase;
 

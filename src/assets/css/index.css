@@ -88,6 +88,11 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   background-color: azure;
+  animation-name: first;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in;
+  transform: scale(0.2);
+  animation-fill-mode: forwards;
 }
 
 .form-title {
@@ -99,7 +104,7 @@ span {
   /*   border-right: 4px solid ; */
   animation: typing 5s steps(60), blink 0.5s infinite step-end alternate;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
 }
 @keyframes typing {
   from {
@@ -113,11 +118,25 @@ span {
   }
 }
 
+@keyframes first {
+  0% {
+    transform: scale(0.3);
+  }
+  30% {
+    transform: scale(0.5);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .menu-screen {
   margin-top: 1%;
   display: flex;
   justify-content: center;
-  width: auto;
+  width: 350px;
   text-transform: uppercase;
   border-radius: 10px;
   background: #ffffff;
@@ -131,19 +150,38 @@ span {
   border-radius: 30px;
   background: #ffffff;
   box-shadow: 30px 30px 60px rgba(206, 201, 201, 0.9254901961), -30px -30px 60px #5f5d5d;
+  animation-name: second;
+  animation-duration: 400ms;
+  animation-timing-function: ease;
+  transform: scale(0.1);
+  animation-fill-mode: forwards;
 }
 
+@keyframes second {
+  0% {
+    transform: scale(0.4);
+  }
+  30% {
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .filter {
   display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
+  justify-content: start;
+  font-size: 1rem;
   text-transform: uppercase;
+  margin-bottom: 8px;
 }
 .filter input {
-  margin: 16px;
-  border-radius: 10px;
+  width: 280px;
+  border-radius: 0.5rem;
   padding: 1px;
-  width: 500px;
   text-align: center;
   text-transform: uppercase;
   border-radius: 10px;

@@ -8,4 +8,39 @@
     height: auto;
     border-radius: 32px;
     @include mixin.neo(30px,30px);
+
+    animation-name: second;
+    animation-duration: 400ms;
+    animation-timing-function:ease;
+    transform: scale(.1);
+    animation-fill-mode: forwards 
+
+
+
+}
+
+
+
+
+@keyframes second {
+    0%{
+        transform: scale(.4);
+        
+    }
+    30%{
+        transform: scale(.6);
+        
+    }
+    60%{
+        transform: scale(.8);
+        
+    }
+    100%{
+    
+        transform: scale(1);
+
+
+    }
+
+    
 }

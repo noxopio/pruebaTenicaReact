@@ -17,10 +17,41 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: azure;
+    animation-name: first;
+    animation-duration: 400ms;
+    animation-timing-function:ease-in;
+    transform: scale(.2);
+    animation-fill-mode: forwards 
+
+
+   
 
 }
 .form-title{
 @include mixin.tiping(24ch);
-text-align: center;
+text-align: left;
+    
+}
+
+@keyframes first {
+    0%{
+        transform: scale(.3);
+        
+    }
+    30%{
+        transform: scale(.5);
+        
+    }
+    60%{
+        transform: scale(.8);
+        
+    }
+    100%{
+    
+        transform: scale(1);
+
+
+    }
+
     
 }

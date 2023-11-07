@@ -1,3 +1,4 @@
+
 import { FormComponent } from "./components/FormComponent"
 
 export const HooksApp = () => {
@@ -5,8 +6,7 @@ export const HooksApp = () => {
    <>  
     
     <hr />
-    
-    <FormComponent></FormComponent>  
+        <FormComponent></FormComponent>  
     </>
     )
 }
