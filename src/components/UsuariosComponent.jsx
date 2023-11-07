@@ -49,7 +49,7 @@ export const UsuariosComponent = () => {
       {loading ? (
         <p className="form_title">Cargando usuarios...</p>
       ) : (
-        <table className="table table-dark">
+        <table className="table table-dark table-custom">
           <thead>
             <tr>
               <th scope="col">Id</th>

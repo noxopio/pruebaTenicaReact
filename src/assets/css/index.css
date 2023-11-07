@@ -13,7 +13,7 @@ html, body {
 
 body {
   position: relative;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,6 +109,7 @@ span {
 }
 
 .menu-screen {
+  margin-top: 1%;
   display: flex;
   justify-content: center;
   width: auto;
@@ -118,11 +119,27 @@ span {
   box-shadow: 10px 10px 20px rgba(206, 201, 201, 0.9254901961), -10px -10px 20px #5f5d5d;
 }
 
+.table-custom {
+  border-radius: 32px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 30px 30px 60px rgba(206, 201, 201, 0.9254901961), -30px -30px 60px #5f5d5d;
+}
+
 .filter {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
+}
+.filter input {
+  margin: 16px;
+  border-radius: 10px;
+  padding: 1px;
+  width: 500px;
   text-align: center;
-  margin: 2rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 5x 5x 10x rgba(206, 201, 201, 0.9254901961), -5x -5x 10x #5f5d5d;
 }
 
 body {

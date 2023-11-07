@@ -1,0 +1,7 @@
+@use 'mixin';
+
+.table-custom{
+    
+    border-radius: 32px;
+    @include mixin.neo(30px,30px);
+}

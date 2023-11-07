@@ -1,6 +1,0 @@
-@use 'mixin';
-
-.table_nep{
-    text-transform: uppercase;
-    @include mixin.neo(20px,20px)
-}

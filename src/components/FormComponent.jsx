@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+
 import { useForm } from "../hooks/useForm";
 import { useState } from "react";
 import { ScreenUser } from "../ScreenUser";
@@ -6,7 +6,7 @@ import { ScreenUser } from "../ScreenUser";
 export const FormComponent = () => {
   const initialForm = {
     userName: "noxOpio",
-    email: "",
+    email: "dark.tempus@gmail.com",
     password: "99999",
   };
 
@@ -15,7 +15,7 @@ export const FormComponent = () => {
 
   const handleLogin = () => {
     // Simulación de autenticación
-    if (userName === "noxOpio" && password === "99999") {
+    if (userName === "noxOpio" && password === "99999" && email==="dark.tempus@gmail.com") {
       setLoggedIn(true);
       setError(""); // Reiniciar cualquier mensaje de error
     } else {
@@ -25,7 +25,7 @@ export const FormComponent = () => {
 
   const handleLogout = () => {
     setLoggedIn(false);
-    setError(""); // Reiniciar cualquier mensaje de error al cerrar sesión
+    setError(""); 
   };
 
   const { formState, onInputChange } = useForm(initialForm);
@@ -88,11 +88,15 @@ export const FormComponent = () => {
         </form>
       ) : (
         <div>
-          <p>Bienvenido, has iniciado sesión como {userName}.</p>
+          <ScreenUser></ScreenUser>
+          <section className="set">
+
+          <p className="set-text" >Bienvenido, has iniciado sesión como {userName}.</p>
+            
+          </section>
           <button onClick={handleLogout} className="btn btn-secondary">
             Cerrar sesión
           </button>
-          <ScreenUser></ScreenUser>
         </div>
       )}
     </>
